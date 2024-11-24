@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faculty</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;1,400;1,600;1,800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One:wght@400&display=swap" />
+  <link rel="stylesheet" href="student.css" />
+</head>
+<body>
+<div class="main-container">
+  <div class="img"></div>
+  <div class="group">
+    <div class="wrapper">
+      <div class="pic"></div>
+      <div class="box">
+        <span class="text">Park History</span>
+        <div class="section">
+          <span class="text-2">Slot No.</span>
+          <span class="text-3">Referral no. </span>
+          <span class="text-4">Date</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frame1 Section -->
+    <div class="frame1">
+      <ol class="text1">
+        <ul>Name:</ul>
+        <ul>Faculty ID:</ul>
+      </ol>
+    </div>
+
+    <div class="frame2">
+      <div class="flex-row-f">
+        <div class="frame">
+          <div class="flex-column-c">
+            <span class="time-in-out">Time In/Out</span>
+            <span class="name">Name: </span>
+          </div>
+        </div>
+        <div class="img-3">
+          <p class="text-12">Today</p>
+          <ol class="text-list">
+            <ul>Plate No:</ul>
+            <ul>Parking Slot No:</ul>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-2">
+      <div class="img-2"></div>
+    </div>
+
+    <div class="wrapper-2">
+      <div class="image"></div>
+      <span class="hello-welcome">Hello!, Welcome to LAVACOMB</span>
+    </div>
+  </div>
+
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+
+  <nav class="mobile-nav">
+    <a href="dahsboard.html">Go to Dashboard</a>
+  </nav>
+
+</div>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <p>&copy; 2024 LAVACOMB. All Rights Reserved.</p>
+    </div>
+    <div class="footer-right">
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector('.mobile-nav');
+    const hamburger = document.querySelector('.hamburger-menu');
+
+    // Toggle the active class for both menu and hamburger
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+</script>
+</body>
+</html>
