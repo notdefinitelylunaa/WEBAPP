@@ -1,0 +1,396 @@
+body{
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: Poppins;
+}
+.img {
+    background-color: rgba(215, 153, 90, 0.35);
+    width: 1518px;
+    height: 1000px;
+}
+.box {
+    position: absolute;
+    width: 1060px;
+    height: 500px;
+    top: 390px;
+    left: 250px;
+    bottom: 500px;
+    background: rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+    border-radius: 17px;
+}
+.text {
+    display: block;
+    position: relative;
+    height: 29px;
+    margin: 9px 0 0 60px;
+    top: 10px;
+    color: #3b2a1a;
+    font-family: "Lilita One", cursive;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 3;
+    -webkit-text-stroke: 1px #fff9f4;
+}
+.text-12 {
+    display: block;
+    position: relative;
+    height: 29px;
+    margin: 9px 0 0 60px;
+    top: 10px;
+    color: #3b2a1a;
+    font-family: "Lilita One", cursive;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 3;
+    -webkit-text-stroke: 1px #fff9f4;
+
+}
+.text-list {
+    display: block;
+    position: relative;
+    height: 29px;
+    right: 60px;
+    top: 15px;
+    margin: 9px 0 0 60px;
+    font-family: "Lilita One", cursive;
+    font-size: 30px;
+    font-weight: 10;
+    line-height: 29px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 3;
+    color: #3b2a1a;
+    font-style: italic;
+    line-height: 1.5;
+}
+.text1 {
+    display: block;
+    position: relative;
+    height: 29px;
+    right: 60px;
+    top: 15px;
+    margin: 9px 0 0 60px;
+    font-family: "Lilita One", cursive;
+    font-size: 30px;
+    font-weight: 10;
+    line-height: 29px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 3;
+    color: #3b2a1a;
+    font-style: italic;
+    word-spacing: 5px;
+    line-height: 1.5;
+}
+.section {
+    position: relative;
+    width: 385px;
+    height: 20px;
+    margin: 6px 0 0 147px;
+    padding: 0;
+    z-index: 9;
+}
+.text-2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: 25px;
+    left: 300px;
+    color: #3b2a1a;
+    font-family: "Lilita One", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 7;
+}
+.frame1 {
+    padding: 10px;
+}
+
+.text1 {
+    list-style-type: decimal; /* Default numbering, you can change to other styles like 'upper-roman', 'lower-alpha', etc. */
+    padding-left: 20px; /* Adds indentation to the list */
+}
+
+.text1 li {
+    font-size: 16px; /* Adjust the font size */
+    margin-bottom: 5px; /* Adds spacing between list items */
+}
+.text-list {
+    padding-left: 20px; /* Adds indentation */
+    list-style-type: decimal; /* Default numbering */
+}
+
+.text-list li {
+    font-size: 16px; /* Adjust the font size */
+    margin-bottom: 8px; /* Adds spacing between list items */
+}
+
+.text-3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 19px;
+    top: 25px;
+    left: 10px;
+    color: #3b2a1a;
+    font-family: "Lilita One", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 9;
+}
+.text-4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: 25px;
+    left: 550px;
+    color: #3b2a1a;
+    font-family: "Lilita One", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 8;
+}
+.section-2 {
+    position: relative;
+    width: 403px;
+    height: 19px;
+    margin: 7px 0 0 144px;
+    z-index: 6;
+}
+.box-2 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 32px;
+    left: 25px;
+    z-index: 22;
+}
+.wrapper-2 {
+    position: absolute;
+    width: 582px;
+    height: 51px;
+    top: 90px;
+    left: 150px;
+    z-index: 24;
+}
+.image {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    background: url(user.png)
+    no-repeat center;
+    background-size: cover;
+    z-index: 24;
+    border-radius: 58.5px;
+}
+.hello-welcome {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 23px;
+    top: 17px;
+    left: 100px;
+    color: #3b2a1a;
+    font-family: "Lilita One", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 22.86px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 21;
+}
+
+.frame1 {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    top: 160px;
+    bottom: 60px;
+    left: 800px;
+    right: 90px;
+    background: rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+    border-radius: 17px;
+    box-sizing: border-box;
+}
+.frame2 {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    top: 160px;
+    left: 250px;
+    right: 690px;
+    background: rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+    border-radius: 17px;
+    box-sizing: border-box;
+}
+.flex-column-c {
+    position: absolute;
+    width: 103px;
+    height: 49px;
+    top: 114px;
+    left: 14px;
+    font-size: 0;
+    z-index: 13;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Container */
+.main-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Mobile Hamburger Menu */
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+}
+
+.hamburger-menu .line {
+    height: 4px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 5px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hamburger Menu Active State (when clicked) */
+.hamburger-menu.active .line:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger-menu.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Mobile Navigation (hidden by default) */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobile-nav.active {
+    display: block;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.mobile-nav ul li {
+    margin: 20px 0;
+}
+
+.mobile-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.mobile-nav ul li a:hover {
+    color: #f4a261;
+}
+/* Footer Styling */
+.footer {
+    background-color: #6c523f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    top: 230px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left p {
+    margin: 0;
+    font-size: 14px;
+    font-family: "Lilita One", sans-serif;
+}
+
+.footer-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-right ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.footer-right ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Lilita One", sans-serif;
+}
+
+.footer-right ul li a:hover {
+    text-decoration: underline;
+}
