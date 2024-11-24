@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Form</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;1,400;1,600;1,800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One:wght@400&display=swap" />
+  <link rel="stylesheet" href="studentform.css">
+</head>
+<body>
+<div class="form-container">
+  <div><h2 class="h2">Hello, Student!</h2></div>
+  <form class="h1">
+    <input type="text" placeholder="TUPT ID" required>
+    <input type="text" placeholder="NAME" required>
+    <input type="text" placeholder="CELLPHONE NO." required>
+    <input type="text" placeholder="COURSE" required>
+    <input type="text" placeholder="PLATE NO." required>
+    <input type="text" placeholder="REFERRAL NO." required>
+
+    <button type="button" onclick="printForm()">PRINT</button>
+  </form>
+</div>
+
+<script>
+  function printForm() {
+    alert("Print button clicked!");
+    window.print(); // Trigger the print dialog
+    window.location.href = "student.html"; //
+  }
+</script>
+</body>
+</html>
