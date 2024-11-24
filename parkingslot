@@ -1,0 +1,174 @@
+body {
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family:"Lilita One", cursive;
+    font-weight: bold;
+}
+.table-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20px;
+    top: 55px;
+    left: 80px;
+    color: #d4975a;
+    font-weight: 400;
+    line-height: 19.364px;
+    text-align: left;
+    z-index: 13;
+}
+table tbody tr td:first-child {
+    font-weight: bold;
+}
+table {
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+    background-color: rgba(108, 82, 63, 0.34);
+
+}
+
+thead th {
+    background-color: #d4975a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(108, 82, 63);
+    font-weight: normal;
+    height: 29px;
+    top: 10px;
+    font-family: "Holtwood One SC", cursive;
+    font-size: 25px;
+    line-height: 29px;
+    z-index: 3;
+    -webkit-text-stroke: 1.5px #000000;
+    letter-spacing: 1px;
+}
+tbody td {
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+    height: 35px;
+    top: 97.14px;
+    left: 0;
+    background: #d9d9d9;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(133, 94, 68);
+    font-weight: normal;
+    letter-spacing: 1px;
+
+}
+
+tbody tr:nth-child(odd) {
+    background: #d9d9d9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eeeeee;
+
+}
+
+.available {
+    color: green;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.occupied {
+    color: red;
+    font-weight: bold;
+}
+
+.reserve {
+    color: #cd8a09;
+    font-weight: bold;
+}
+.text1{
+    height: 29px;
+    top: 10px;
+    color: #d4975aF;
+    font-family: "Lilita One", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29px;
+    text-align: left;
+    z-index: 3;
+    -webkit-text-stroke: 1px #000000;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 565px;
+    position: relative
+}
+
+.button-container button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Lilita One", cursive;
+    font-weight: bold;
+    width: 250px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+    background-color: #d4975a;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.back-btn {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 1100px;
+
+}
+
+.park-btn {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    left: -275px;
+}
+.next-btn {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 830px;
+}
+.back-btn:hover {
+    background-color: rgb(241, 168, 100);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.47);
+}
+
+.park-btn:hover {
+    background-color: rgb(241, 168, 100);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.47);
+}
+.next-btn:hover{
+    background-color: rgb(241, 168, 100);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.47);
+}
