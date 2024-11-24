@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Ensures proper layout for footer positioning */
+}
+
+.form-container {
+    background-color: #3b2a1a;
+    color: white;
+    width: 480px;
+    padding: 25px;
+    border-radius: 50px;
+    min-height: 425px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto; /* Centers the container vertically and horizontally */
+}
+
+.form-container h2 {
+    margin: 15px auto 10px;
+    background-color: #f1a864;
+    color: white;
+    padding: 10px 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: inline-block;
+    border: 2px solid #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-container input, .form-container button {
+    width: 70%;
+    margin-bottom: 19px;
+    padding: 10px;
+}
+
+.form-container input[type="file"] {
+    background-color: #fff;
+    color: black;
+}
+
+.form-container button {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 2px solid #000000;
+    padding: 5px 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.form-container button:hover {
+    background-color: #d98856;
+    border-color: rgba(253, 122, 0, 0.47);
+}
+
+.btn-login {
+    background-color: #f1a864;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    font-family: "Lilita One", sans-serif;
+    letter-spacing: 1px;
+}
+
+.footer-link {
+    margin-top: 1px;
+    font-size: 16px;
+    color: #ddd;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Lilita One", sans-serif;
+    letter-spacing: 1px;
+}
+
+.logo {
+    display: block;
+    margin-bottom: 5px;
+    width: 500px;
+    height: auto;
+}
+
+.subtitle {
+    font-size: 28px;
+    margin-top: 1px;
+    margin-bottom: 30px;
+    font-family: "Lilita One", sans-serif;
+}
+
+.footer {
+    background-color: #6c523f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Pushes the footer to the bottom of the page */
+}
+
+.footer-left p {
+    margin: 0;
+    font-size: 14px;
+    font-family: "Lilita One", sans-serif;
+}
+
+.footer-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-right ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.footer-right ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Lilita One", sans-serif;
+}
+
+.footer-right ul li a:hover {
+    text-decoration: underline;
+}
