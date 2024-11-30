@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;1,400;1,600;1,800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One:wght@400&display=swap" />
+    <link rel="stylesheet" href="fform.css">
+</head>
+<body>
+<div class="form-container">
+    <div><h2 class="h2">Hello, Faculty!</h2></div>
+    <form>
+        <input type="text" placeholder="Name" required>
+        <input type="text" placeholder="Faculty ID" required>
+        <input type="text" placeholder="Plate No." required>
+        <input type="text" placeholder="Valid ID" required>
+        <input type="file" id="idPicture">
+        <button type="button" onclick="printForm()">PRINT</button>
+    </form>
+</div>
+
+<script>
+    function printForm() {
+        alert("Print button clicked!");
+        // Add print logic here if required
+    }
+</script>
+</body>
+</html>
