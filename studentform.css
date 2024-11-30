@@ -11,14 +11,12 @@ body {
 .h2{
     font-family: "Lilita One", sans-serif;
     letter-spacing: 1px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000000;
     font-size: 30px;
     text-align: center;
 }
 .form-container {
     background-color: #3b2a1a;
-    color: white;
+    color: #ffffff;
     width: 470px;
     padding: 25px;
     border-radius: 25px;
@@ -31,23 +29,24 @@ body {
 .form-container h2 {
     margin: 15px auto 10px;
     background-color: #f1a864;
-    color: white;
+    color: rgba(0, 0, 0, 0.7);
     padding: 10px 5px;
     font-weight: bold;
     line-height: 1.5;
-    width: 50%;
+    width: 60%;
     border-radius: 10px;
     text-align: center;
     display: inline-block;
-    border: 2px solid #000000;
+    border: 2px solid #855e44;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
 }
 
 .form-container input, .form-container button {
     width: 70%;
     margin-bottom: 10px;
     padding: 10px;
-    border-radius: 1px;
+    border-radius: 10px;
     border: none;
 }
 
@@ -64,19 +63,19 @@ body {
 }
 .form-container button {
     background-color: #f1a864;
-    color: white;
+    color: rgba(0, 0, 0, 0.7);
     font-weight: bold;
     cursor: pointer;
     border-radius: 10px;
-    border: 2px solid #000000;
+    border: 2px solid #855e44;
     padding: 10px 20px;
     margin-left: 190px;
     line-height: 1.5;
     width: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-family: "Lilita One", sans-serif;
+    font-size: 19px;
 }
-
-
 .form-container button:hover {
     background-color: #d98856;
     border-color: rgba(253, 122, 0, 0.47);
