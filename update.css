@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #ffffff;
+    background-image: url("background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: "Lilita One", sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #6c523f;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    left: auto;
+}
+
+h2 {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.55);
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.profile-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.btn-upload {
+    background-color: #754d36;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.btn-upload:hover {
+    background-color: #cd8a09;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+    font-family: "Lilita One", sans-serif;
+}
+
+.btn-save,
+.btn-cancel {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Lilita One", sans-serif;
+}
+
+.btn-save {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-save:hover {
+    background-color: #218838;
+}
+
+.btn-cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 500px) {
+    .btn-container {
+        flex-direction: column;
+    }
+}
