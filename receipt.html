@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receipt</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;1,400;1,600;1,800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One:wght@400&display=swap" />
+    <link rel="stylesheet" href="boom.css">
+</head>
+<body>
+<!-- Receipt Container -->
+<div id="receipt-container" class="main-container">
+    <div class="pic"></div>
+    <div class="group"></div>
+    <div class="box">
+        <div class="wrapper">
+            <div class="box-2">
+                <img src="logofinal.png" alt="Lava Comb" class="logo">
+                <p class="subtitle">PARKING RECEIPT</p>
+            </div>
+        </div>
+        <div class="group-2">
+            <span class="text-3">Parked 004</span>
+            <span class="text-5">Parking Slot No.</span>
+        </div>
+        <div class="box-3">
+
+        </div>
+        <span class="text-6">7:30am - 12:00pm</span>
+        <span class="time-in-out">Time in/out</span>
+        <div class="flex-row-cb">
+            <span class="visitor">Visitor</span>
+            <span class="role">Role</span>
+        </div>
+        <div class="flex-row-fd">
+            <span class="text-b">Name</span>
+            <span class="benedict-elnar">Benedict Elnar</span>
+            <div class="line1"></div>
+        </div>
+        <div class="box-6">
+            <span class="text-d">Plate No.</span>
+            <span class="text-c">BY81839H</span>
+        </div>
+        <div class="group-3">
+            <span class="referral-no">Referral no.</span>
+            <span class="text-e">0128808922</span>
+        </div>
+        <div class="line-2"></div>
+        <span class="payment">Payment</span>
+        <span class="php">PHP 100.00</span>
+    </div>
+    <span class="date">11/19/24</span>
+</div>
+
+<!-- Save Button -->
+<button class="rectangle" onclick="downloadReceiptImage()">Save Receipt</button>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script>
+    function downloadReceiptImage() {
+        const receipt = document.getElementById('receipt-container');
+        html2canvas(receipt).then((canvas) => {
+            // Convert the canvas to a downloadable image
+            const link = document.createElement('a');
+            link.href = canvas.toDataURL('image/png');
+            link.download = 'Parking_Receipt.png';
+            link.click();
+        });
+    }
+</script>
+</body>
+</html>
