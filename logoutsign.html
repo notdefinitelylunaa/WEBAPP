@@ -6,16 +6,16 @@
   <title>Logout</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;1,400;1,600;1,800&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One:wght@400&display=swap" />
-  <link rel="stylesheet" href="logout.css" />
+  <link rel="stylesheet" href="logout.css">
 </head>
 <body>
 <div class="main-container">
   <div class="rectangle">
     <span class="are-you-sure">Are you sure you want to Sign Out?</span>
-    <div class="flex-row-fde">
-      <button class="rectangle-1" onclick="handleYes()"><span class="yes">Yes</span></button>
-      <button class="rectangle-2" onclick="handleNo()"><span class="no">No</span></button>
-    </div>
+  </div>
+  <div class="flex-row-fde">
+    <button class="rectangle-1" onclick="handleYes()">Yes</button>
+    <button class="rectangle-2" onclick="handleNo()">No</button>
   </div>
 </div>
 
@@ -23,14 +23,12 @@
   // JavaScript to handle button clicks
   function handleYes() {
     alert("You have signed out successfully!");
-    // Redirect to a logout endpoint or homepage
-    window.location.href = "/logout"; // Replace with the actual URL
+    window.location.href = "/logout"; // Replace with your logout URL
   }
 
   function handleNo() {
     alert("Sign-out canceled.");
-    // Redirect to a specific page or close the prompt
-    window.location.href = "/home"; // Replace with the actual URL
+    window.location.href = "/home"; // Replace with your homepage URL
   }
 </script>
 </body>
