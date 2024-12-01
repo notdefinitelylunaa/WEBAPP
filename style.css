@@ -1,16 +1,15 @@
-/* styles.css */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: #f4f4f4;
-    height: 94vh;
+    height: 100vh;
     display: flex;
 }
 
 .sidebar {
-    width: 300px;
-    background-color: #d9d9d9; /* Light gray background */
+    width: 280px;
+    background-color: #d9d9d9; /* Light gray */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -23,13 +22,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .profile-icon {
     width: 100px;
     height: 100px;
-    background-color: #2196f3; /* Blue background */
+    background-color: #2196f3; /* Blue */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -52,24 +51,20 @@ body {
     height: 50%;
     background-color: white;
     border-radius: 50%;
-    border-bottom: 8px solid #2196f3; /* Creates the lower semi-circle */
+    border-bottom: 8px solid #2196f3; /* Lower semi-circle */
     box-sizing: border-box;
 }
 
 .profile-text {
-    font-size: 16px;
-    margin: 0;
-    display: block;
-    position: relative;
-    height: 29px;
-    font-weight: 10;
-    white-space: nowrap;
-    z-index: 3;
-    color: #3b2a1a;
-    right: 5px;
-    top: 5px;
-    font-family: "Lilita One", cursive;
-    text-align: center;
+    font-size: 18px;
+    color: #492a0e;
+    font-family: 'Lilita One', cursive;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.profile-text:hover {
+    color: #a44b0a;
 }
 
 .menu {
@@ -82,35 +77,58 @@ body {
 
 .menu-btn {
     width: 80%;
-    padding: 15px 20px;
-    background-color: #d99b62; /* Brownish-orange button */
+    padding: 12px;
+    background-color: #d99b62; /* Brownish-orange */
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    display: block;
-    position: relative;
-    margin: 9px 0 0 60px;
-    top: 10px;
-    left: -30px;
+    font-family: 'Lilita One', cursive;
+    font-size: 20px;
     color: #3b2a1a;
-    font-family: "Lilita One", cursive;
-    font-size: 24px;
-    font-weight: 250;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .menu-btn:hover {
     transform: scale(1.05);
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.7); /* Darker and stronger shadow on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
 }
 
 .sign-out-btn {
     margin-top: auto;
-    background-color: #d99b62;
+    background-color: #bf5a36; /* Darker orange */
 }
 
 .sign-out-btn:hover {
-    background-color: #bf834d;
+    background-color: #a04529;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 220px;
+    }
+
+    .profile-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .menu-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 180px;
+        padding: 10px 0;
+    }
+
+    .menu-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
