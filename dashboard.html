@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;1,400;1,600;1,800&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One:wght@400&display=swap" />
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 <div class="sidebar">
@@ -16,14 +17,34 @@
                 <div class="inner-circle"></div>
             </div>
         </div>
-        <p class="profile-text">Edit Profile</p>
+        <p class="profile-text" onclick="editProfile()">Edit Profile</p>
     </div>
     <nav class="menu">
-        <button class="menu-btn">Home</button>
-        <button class="menu-btn">Parking Slot</button>
-        <button class="menu-btn">About Us</button>
+        <button class="menu-btn" onclick="navigateTo('home')">Home</button>
+        <button class="menu-btn" onclick="navigateTo('parking-slot')">Parking Slot</button>
+        <button class="menu-btn" onclick="navigateTo('about-us')">About Us</button>
     </nav>
-    <button class="menu-btn sign-out-btn">Sign Out</button>
+    <button class="menu-btn sign-out-btn" onclick="signOut()">Sign Out</button>
 </div>
+
+<script>
+    function editProfile() {
+        alert("Redirecting to Edit Profile page...");
+        window.location.href = "/edit-profile"; // Replace with actual URL
+    }
+
+    function navigateTo(page) {
+        alert(`Navigating to ${page} page...`);
+        window.location.href = `/${page}`; // Replace with actual URL
+    }
+
+    function signOut() {
+        const confirmation = confirm("Are you sure you want to sign out?");
+        if (confirmation) {
+            alert("Signed out successfully!");
+            window.location.href = "/sign-out"; // Replace with actual URL
+        }
+    }
+</script>
 </body>
 </html>
