@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     background: #f9f9f9 url("background.png") center/cover no-repeat fixed;
-    font-family: Inter, sans-serif;
     color: #333;
     display: flex;
     justify-content: center;
@@ -11,197 +10,61 @@ body {
     flex-direction: column;
 }
 
-.box {
-    background: #dff2eb;
-    border-radius: 20px;
-    padding: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-.box-2 {
-    background: rgba(108, 82, 63, 0.25);
-    border-radius: 4px;
-    padding: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    height: 100px;
-}
-
-.logo {
-    display: block;
-    margin-bottom: 5px;
-    width: 320px;
-    height: auto;
-    right: 10px;
-}
-
-.subtitle {
-    color: #6c523f;
-    font-family: "Lilita One", sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin: 10px 0 0;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-.text-3 {
-    color: #000;
-    font-size: 1rem;
-    margin: 10px 0;
-}
-.date{
-    color: #000;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 10px;
-}
-.group-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-}
-
-.text-4 {
-    color: #000;
-    font-size: 1rem;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-}
-
-.img {
-    width: 100%;
-    height: 1px;
-    background-color: #000;
-}
-
-.text-5,
-.time-in-out,
-.role {
-    font-size: 0.8rem;
-    color: #000000;
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
-    margin: 5px 0;
-}
-
-.visitor,
-.text-6 {
-    font-size: 1rem;
-    color: #000;
-}
-
-.line {
-    height: 1px;
-    width: 100%;
-    background-color: #000;
-    margin-top: 10px;
-}
-
-.flex-row-cb,
-.flex-row-fd {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
-}
-
-.pic-2 {
-    background-color: #ccc;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-}
-
-.rectangle {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 20px;
-}
-
-.rectangle:hover {
-    background-color: #45a049;
-}
-
-@media (max-width: 768px) {
-    .group {
-        width: 90%;
-    }
-
-    .box {
-        padding: 10px;
-    }
-
-    .text {
-        font-size: 1.5rem;
-    }
-
-    .text-2 {
-        font-size: 1rem;
-    }
-
-    .rectangle {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-}
 .main-container {
-    background: #6c523f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
+    width: 200%;
+    max-width: 450px;
 }
 
-.rectangle {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: rgb(133, 94, 68);
+.rectangle,
+.rectangle-1,
+.rectangle-2 {
+    width: 220%;
+    max-width: 280px;
+    padding: 15px;
+    background-color: rgb(154, 96, 50);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
     text-align: center;
-    width: 100%;
-    max-width: 200px;
-    font-family:"Lilita One", sans-serif;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: "Lilita One", sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
 }
 
-.rectangle:hover {
-    background-color: #6c523f;
-}
-
-.save {
-    font-weight: bold;
+.rectangle:hover,
+.rectangle-1:hover,
+.rectangle-2:hover {
+    background-color: #855e44;
+    transform: scale(1.05);
 }
 
 /* Responsive Styles */
 @media (max-width: 600px) {
-    .main-container {
-        padding: 15px;
-    }
-
-    .rectangle {
-        font-size: 14px;
-        padding: 8px 16px;
+    .rectangle,
+    .rectangle-1,
+    .rectangle-2 {
+        font-size: 16px;
+        padding: 12px;
     }
 }
 
 @media (max-width: 400px) {
-    .rectangle {
-        font-size: 12px;
-        padding: 6px 12px;
-    }
-
-    .main-container {
+    .rectangle,
+    .rectangle-1,
+    .rectangle-2 {
+        font-size: 14px;
         padding: 10px;
     }
 }
